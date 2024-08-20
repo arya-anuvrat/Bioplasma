@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8BC34A;
+    padding: 10px 20px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.icon-button {
+    width: 30px;
+    height: 30px;
+    background-color: #000000;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.smiley {
+    background-image: url('smiley.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.drop {
+    background-image: url('drop.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.leaf {
+    background-image: url('leaf.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 20px;
+}
