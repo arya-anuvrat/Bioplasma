@@ -50,6 +50,7 @@ body {
 }
 
 .nav-links a {
+    font-size: 10;
     text-decoration: none;
     color: #000000;
     margin: 0 15px;
@@ -66,4 +67,30 @@ body {
 .logo img {
     width: 200px;
     height: 38.5px;
+}
+.hero-section {
+    background-image: url('Tablets-1-1.jpg'); /* Yahan pe daalna hai title img ka link*/
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.hero-overlay h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
 }
