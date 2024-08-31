@@ -7,6 +7,9 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
+    h1{
+        text-align: center;
+    }
 }
 
 .navbar {
@@ -62,7 +65,9 @@ body {
 }
 
 .content {
-    padding: 20px;
+    padding: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .logo img {
     width: 200px;
@@ -93,4 +98,21 @@ body {
 .hero-overlay h1 {
     font-size: 48px;
     margin-bottom: 10px;
+}
+
+.hero1-section {
+    background-image: url('Top-pharmaceutical-companies-in-Dubai-_-Cover-1-28-7-22.jpg'); /* Yahan pe daalna hai title img ka link*/
+    background-size: cover;
+    background-position: top;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.text{
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    background-color: #ffffff;
 }
