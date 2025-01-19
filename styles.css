@@ -1,15 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Updated styles.css for Alternating Layout */
 
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #ffffff;
-    h1{
-        text-align: center;
-    }
 }
 
 .navbar {
@@ -20,40 +15,8 @@ body {
     padding: 10px 20px;
 }
 
-.button-group {
-    display: flex;
-    gap: 10px;
-}
-
-.icon-button {
-    width: 30px;
-    height: 30px;
-    background-color: #000000;
-    border: 2px solid #000000;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.smiley {
-    background-image: url('smiley.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.drop {
-    background-image: url('drop.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.leaf {
-    background-image: url('leaf.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
 .nav-links a {
-    font-size: 10;
+    font-size: 16px;
     text-decoration: none;
     color: #000000;
     margin: 0 15px;
@@ -64,55 +27,65 @@ body {
     text-decoration: underline;
 }
 
-.content {
-    padding: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-.logo img {
-    width: 200px;
-    height: 38.5px;
-}
 .hero-section {
-    background-image: url('Tablets-1-1.jpg'); /* Yahan pe daalna hai title img ka link*/
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.hero-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px 0;
 }
 
 .hero-overlay h1 {
     font-size: 48px;
-    margin-bottom: 10px;
+    color: #333333;
 }
 
-.hero1-section {
-    background-image: url('Top-pharmaceutical-companies-in-Dubai-_-Cover-1-28-7-22.jpg'); /* Yahan pe daalna hai title img ka link*/
-    background-size: cover;
-    background-position: top;
-    height: 400px;
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product-item {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    position: relative;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
 }
 
-.text{
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    background-color: #ffffff;
+.product-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.image-left, .image-right {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.text-left, .text-right {
+    flex: 2;
+    padding: 10px;
+}
+
+.text-left h3, .text-right h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.text-left p, .text-right p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.image-left p, .image-right p {
+    background-color: #f0f0f0;
+    color: #aaa;
+    font-size: 14px;
+    padding: 20px;
+    border: 1px dashed #ccc;
+    border-radius: 4px;
 }
