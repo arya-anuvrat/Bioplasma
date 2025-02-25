@@ -1,6 +1,6 @@
-/* -------------------------------
-   Modernized Global Styles
-------------------------------- */
+/* -------------------------------------
+   1. GLOBAL STYLES
+-------------------------------------- */
 
 /* Use a modern, clean font */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
@@ -17,9 +17,9 @@ body {
     color: #333;
 }
 
-/* -------------------------------
-   Navigation Bar
-------------------------------- */
+/* -------------------------------------
+   2. NAVIGATION BAR
+-------------------------------------- */
 
 .navbar {
     display: flex;
@@ -37,6 +37,7 @@ body {
     width: auto;
 }
 
+/* Simple horizontal nav for desktops */
 .nav-links a {
     font-size: 16px;
     text-decoration: none;
@@ -50,11 +51,12 @@ body {
     color: #cce6cc;
 }
 
-/* -------------------------------
-   Hero Section
-------------------------------- */
+/* -------------------------------------
+   3. HERO SECTION
+-------------------------------------- */
 
 .hero-section {
+    /* Height is flexible to accommodate different screens */
     height: 400px;
     background: url("Top-pharmaceutical-companies-in-Dubai-_-Cover-1-28-7-22.jpg") center/cover no-repeat;
     position: relative;
@@ -64,35 +66,31 @@ body {
     text-align: center;
 }
 
+/* Dark overlay behind text */
 .hero-overlay {
-    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
+/* Hero heading text */
 .hero-section h1 {
     position: relative;
-    color: #fff;         /* Pure white text */
-    font-size: 64px;     /* Increase the size as needed */
-    font-weight: 700;    /* Make it bolder if desired */
-    z-index: 2;          /* Ensure it appears above any overlay */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional for better contrast */
+    color: #fff;          /* Pure white text */
+    font-size: 64px;      /* Large for desktop */
+    font-weight: 700;
+    z-index: 2;           /* Above the overlay */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Improves contrast on busy images */
+    margin: 0 20px;       /* Some padding so it doesn't stick to the edges */
 }
 
-
-/* If you want a different hero image per page,
-   you can use specific page classes/IDs, e.g.:
-   .about-hero { background-image: url("..."); }
-   .brands-hero { background-image: url("..."); }
-   etc.
-*/
-
-/* -------------------------------
-   Content Sections
-------------------------------- */
+/* -------------------------------------
+   4. MAIN CONTENT
+-------------------------------------- */
 
 .content {
     max-width: 1200px;
@@ -116,9 +114,20 @@ body {
     margin-bottom: 10px;
 }
 
-/* -------------------------------
-   Product Items (Brands Page)
-------------------------------- */
+/* Placeholder for images or additional blocks */
+.placeholder {
+    background-color: #fff;
+    border: 2px dashed #ccc;
+    border-radius: 4px;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #888;
+}
+
+/* -------------------------------------
+   5. PRODUCT ITEMS (BRANDS PAGE)
+-------------------------------------- */
 
 .product-item {
     display: flex;
@@ -170,23 +179,9 @@ body {
     color: #555;
 }
 
-/* -------------------------------
-   Placeholder Boxes
-------------------------------- */
-
-.placeholder {
-    background-color: #fff;
-    border: 2px dashed #ccc;
-    border-radius: 4px;
-    padding: 40px;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #888;
-}
-
-/* -------------------------------
-   Footer
-------------------------------- */
+/* -------------------------------------
+   6. FOOTER
+-------------------------------------- */
 
 .footer {
     background-color: #4CAF50;
@@ -200,16 +195,53 @@ body {
     font-size: 14px;
 }
 
+/* -------------------------------------
+   7. MEDIA QUERIES (RESPONSIVENESS)
+-------------------------------------- */
+
+/* Tablet screens (below ~768px) */
 @media (max-width: 768px) {
+    /* Hero section height & text scaling */
     .hero-section {
-        height: 250px;
+        height: 250px; /* Reduce hero height */
     }
 
-    .hero-overlay h1 {
-        font-size: 32px;
+    .hero-section h1 {
+        font-size: 36px; /* Smaller heading for mobile */
+    }
+
+    /* Stack nav links if there's no space */
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .nav-links a {
+        margin: 5px;
+    }
+
+    /* Make product items single column */
+    .product-item,
+    .product-item:nth-child(even) {
+        flex-direction: column;
+    }
+}
+
+/* Mobile screens (below ~480px) */
+@media (max-width: 480px) {
+    /* Further scale down hero text */
+    .hero-section h1 {
+        font-size: 28px;
+    }
+
+    /* Make sure content fits well */
+    .content {
+        margin: 20px auto;
+        padding: 0 10px;
     }
 
     .product-item {
-        flex-direction: column !important;
+        margin-bottom: 15px;
     }
 }
