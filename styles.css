@@ -1,91 +1,96 @@
 /* Updated styles.css for Alternating Layout */
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #8BC34A;
-    padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8bc34a;
+  padding: 10px 20px;
 }
 
 .nav-links a {
-    font-size: 16px;
-    text-decoration: none;
-    color: #000000;
-    margin: 0 15px;
-    font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000000;
+  margin: 0 15px;
+  font-weight: bold;
 }
 
 .nav-links a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .hero-section {
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 50px 0;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 50px 0;
 }
 
 .hero-overlay h1 {
-    font-size: 48px;
-    color: #333333;
+  font-size: 48px;
+  color: #333333;
 }
 
 .content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .product-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0;
-    padding: 20px;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
 }
 
 .product-item:nth-child(even) {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
-.image-left, .image-right {
-    flex: 1;
-    text-align: center;
-    padding: 10px;
+.image-left,
+.image-right {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
 }
 
-.text-left, .text-right {
-    flex: 2;
-    padding: 10px;
+.text-left,
+.text-right {
+  flex: 2;
+  padding: 10px;
 }
 
-.text-left h3, .text-right h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #444;
+.text-left h3,
+.text-right h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #444;
 }
 
-.text-left p, .text-right p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #666;
+.text-left p,
+.text-right p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
 }
 
-.image-left p, .image-right p {
-    background-color: #f0f0f0;
-    color: #aaa;
-    font-size: 14px;
-    padding: 20px;
-    border: 1px dashed #ccc;
-    border-radius: 4px;
+.image-left p,
+.image-right p {
+  background-color: #f0f0f0;
+  color: #aaa;
+  font-size: 14px;
+  padding: 20px;
+  border: 1px dashed #ccc;
+  border-radius: 4px;
 }
